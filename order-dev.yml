@@ -19,4 +19,4 @@ product:
 server:
   port: 1201
 env:
-  dev
+  dev1
