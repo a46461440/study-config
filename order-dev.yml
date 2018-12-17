@@ -24,3 +24,5 @@ server:
   port: 1201
 env:
   dev
+label:
+  release
