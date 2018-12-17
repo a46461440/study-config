@@ -20,3 +20,6 @@ server:
   port: 1201
 env:
   dev
+girl:
+  name: wyl
+  age: 23
