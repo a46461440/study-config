@@ -15,7 +15,7 @@ zuul:
     behind-proxy: true
     policy-list:
       myProduct:
-        - limit: 10
+        - limit: 1
           quota: 1000
           refreshInterval: 10
           type:
