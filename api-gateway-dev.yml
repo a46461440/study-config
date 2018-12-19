@@ -4,10 +4,10 @@ zuul:
     myProduct:
        path: /myProduct/**
        serviceId: product
-  ignored-patterns: #排出某些路由
+  ignored-patterns: #排除某些路由
 #    - /product/product/list
 #    - /myProduct/product/list
-     - /**/list
+#    - /**/list
   sensitive-headers:
 management:
   endpoints:
