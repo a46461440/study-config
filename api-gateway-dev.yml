@@ -9,8 +9,35 @@ zuul:
 #    - /myProduct/product/list
 #    - /**/list
   sensitive-headers:
+  ratelimit:
+    enabled: true
+    repository: redis
+    behind-proxy: true
+    policy-list:
+      myProduct:
+        - limit: 10
+          quota: 1000
+          refreshInterval: 10
+          type:
+            - user
+            - origin
+            - url
+    default-policy-list:
+      - limit: 10
+        quota: 1000
+        refreshInterval: 10
+        type:
+          - user
+          - origin
+          - url
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+
