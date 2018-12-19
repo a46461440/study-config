@@ -7,7 +7,7 @@ zuul:
   ignored-patterns: #排除某些路由
 #    - /product/product/list
 #    - /myProduct/product/list
-    - /**/list
+#    - /**/list
   sensitive-headers:
 management:
   endpoints:
