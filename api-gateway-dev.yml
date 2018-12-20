@@ -8,7 +8,7 @@ zuul:
 #    - /product/product/list
 #    - /myProduct/product/list
 #    - /**/list
-  sensitive-headers:
+#  sensitive-headers:
   ratelimit:
     enabled: true
     repository: redis
