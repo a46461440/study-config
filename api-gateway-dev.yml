@@ -1,3 +1,10 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
 zuul:
   routes:
     product: /myProduct/**
