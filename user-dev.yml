@@ -1,7 +1,7 @@
 spring:
   redis:
     port: 6379
-    host: redis.ip
+    host: 127.0.0.1
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -15,7 +15,7 @@ spring:
   jpa:
     show-sql: true
   rabbitmq:
-    host: rabbit.ip
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
