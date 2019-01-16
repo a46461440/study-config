@@ -16,7 +16,7 @@ spring:
   jpa:
       show-sql: true
   rabbitmq:
-    port: 5672
+    host: rabbit.ip
     username: guest
     password: guest
     #默认就是json类型？ 一下当输出到rabbitmq后会变成json类型,而不会是字节码
