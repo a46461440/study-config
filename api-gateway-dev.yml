@@ -43,6 +43,10 @@ management:
       exposure:
         include: '*'
 spring:
+  rabbitmq:
+    host: rabbit.ip
+    username: guest
+    password: guest
   redis:
     host: redis.ip
     port: 6379
