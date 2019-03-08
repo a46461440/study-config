@@ -50,5 +50,6 @@ spring:
   redis:
     host: redis.ip
     port: 6379
-
+server:
+  port: 1403
 
